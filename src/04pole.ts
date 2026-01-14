@@ -15,10 +15,15 @@ console.log(`Délka pole je: ${poleRetezcu.length}`);
 for (let item of poleRetezcu) {
     console.log(`Ovoce: ${item}`);
 }
+//nebo klasický for cyklus
+for (let i = 0; i < poleRetezcu.length; i+=1) {
+    console.log(`Ovoce na indexu ${i} je: ${poleRetezcu[i]}`);
+}
 
 type Piskvorka = "X" | "O" | " ";
+type RadekPiskvorka = Array<Piskvorka>;
 
-const polePiskvorka: Array<Array<Piskvorka>> =  [
+const polePiskvorka: Array<RadekPiskvorka> =  [
   ["X", "O", " "],
   [" ", "X", "O", "O"], // lze mít i různé délky vnořených polí
   ["O", " ", "X"],
