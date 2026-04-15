@@ -1,1 +1,1 @@
-import "./04pole";
+import "./05funkce";
